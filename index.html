@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/21cf82c0d5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -30,9 +31,24 @@
             <a href="#" class="nav__link">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
-      <div class="menu"></div>
+      <div class="menu">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="menu__links">
+            <a href="" class="menu__link" onclick="closeMenu()">About</a>
+            <a href="" class="menu__link" onclick="closeMenu()">Blog</a>
+            <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+            <a href="" class="menu__link" onclick="closeMenu()">Contact Us</a>
+            <a href="" class="menu__link" onclick="closeMenu()">Login</a>
+            <a href="" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+        </div>
+      </div>
       <header>
         <div class="container">
           <div class="row">
